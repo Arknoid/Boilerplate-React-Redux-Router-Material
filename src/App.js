@@ -3,7 +3,7 @@ import React from 'react';
 function App() {
   return (
     <div>
-      boilderplate-react-redux-router-material
+      boilderplagte-react-redux-router-material
     </div>
   );
 }
