@@ -1,20 +1,42 @@
 {
-    "extends": [
-        "prettier",
-        "prettier/react",
-        "prettier/standard",
-        "plugin:react/recommended",
-        "plugin:import",
-        "plugin:jsx-a11y"
-    ],
-    "plugins": [
-        "react",
-        "import",
-        "jsx-a11y"
-    ],
-    "parser": "babel-eslint",
-    "rules": {
-        "react-hooks/rules-of-hooks": "error", 
-        "react-hooks/exhaustive-deps": "warn"
+  "extends": [
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+
+  "plugins": [
+    "react-hooks",
+    "prettier",
+    "import"
+  ],
+
+  "parser": "babel-eslint",
+
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn" ,
+    "prettier/prettier":["error"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src/"]
+      }
+    }
+
+  }
 }

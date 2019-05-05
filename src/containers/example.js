@@ -6,10 +6,10 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import Example from '';
+//import Example from '';
 
 // Action Creators
-import { doSomething } from '../store/reducers/index';
+//import { doSomething } from '../store/reducers/index';
 
 /* === State (données) ===
  * - mapStateToProps retroune un objet de props pour le composant de présentation
@@ -19,7 +19,7 @@ import { doSomething } from '../store/reducers/index';
  * Pas de data à transmettre ? const mapStateToProps = null;
  */
 const mapStateToProps = (state, ownProps) => ({
-  message: state.message,
+  message: state.message
 });
 
 /* === Actions ===
@@ -32,14 +32,14 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = (dispatch, ownProps) => ({
   doSomething: () => {
     dispatch(doSomething());
-  },
+  }
 });
 
 // Container
 // connect(Ce dont j'ai besoin)(Qui en a besoin)
 const ExampleContainer = connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(Example);
 
 /* 2 temps
