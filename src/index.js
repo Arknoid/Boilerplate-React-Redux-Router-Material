@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 /**
  * Local import
  */
-import App from "./components/App";
+import App from "./App";
 import store from "./store";
 
 /**

@@ -2,13 +2,11 @@
  * NPM import
  */
 import React from 'react';
-
+import Routes from './routes';
 
 function App() {
   return (
-    <div>
-      boilderplagte-react-redux-router-material
-    </div>
+    <Routes />
   );
 }
 
